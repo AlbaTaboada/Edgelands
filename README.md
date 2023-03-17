@@ -1,1 +1,1 @@
-# Edgelands' Weather Map on Data Surveillance
+# Svalur Weather Map on Svalbard's newspaper articles
