@@ -1,0 +1,8 @@
+FROM jupyter/minimal-notebook
+
+RUN pip install pandas
+RUN pip install mediacloud mediacloud-metadata
+RUN pip install tqdm ipywidgets
+RUN pip install jupyterlab-widgets
+RUN pip install pyarrow
+RUN pip install spacy
