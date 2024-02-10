@@ -12,7 +12,7 @@ export default entities => {
     // const mean = mean.entities(e => e.frequency_norm)
 
     entities
-        .filter(e => e.type === 'subject') // Keep keywords
+        .filter(e => e.type === 'tag') // Keep keywords
         .sort((a, b) => b.slope - a.slope) // Order by linear regression
         .forEach(e => {
 

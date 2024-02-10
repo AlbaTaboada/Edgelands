@@ -22,7 +22,7 @@ export default (entities) => {
         // .filter(e => e['type'] !== 'subject') // Keep nodes
         .forEach(e => {
 
-            const isSubject = e.type == 'subject'
+            const isSubject = e.type == 'tag'
 
             const color = isSubject ? s.gray : e.slope > 0 ? s.red : s.blue
 

@@ -1,0 +1,617 @@
+{
+    "milliseconds": 363.77500000000003,
+    "predictions": {
+        "allDescriptors": [
+            {
+                "label": "immigration and refugees",
+                "score": "0.96243"
+            },
+            {
+                "label": "illegal aliens",
+                "score": "0.46569"
+            },
+            {
+                "label": "labor",
+                "score": "0.08527"
+            },
+            {
+                "label": "asylum (political)",
+                "score": "0.04402"
+            },
+            {
+                "label": "politics and government",
+                "score": "0.04267"
+            },
+            {
+                "label": "refugees and expatriates",
+                "score": "0.04139"
+            },
+            {
+                "label": "immigration and emigration",
+                "score": "0.03922"
+            },
+            {
+                "label": "smuggling",
+                "score": "0.03336"
+            },
+            {
+                "label": "deportation",
+                "score": "0.02770"
+            },
+            {
+                "label": "migrant labor",
+                "score": "0.01702"
+            },
+            {
+                "label": "travel and vacations",
+                "score": "0.01674"
+            },
+            {
+                "label": "finances",
+                "score": "0.01274"
+            },
+            {
+                "label": "crime and criminals",
+                "score": "0.00920"
+            },
+            {
+                "label": "economic conditions and trends",
+                "score": "0.00873"
+            },
+            {
+                "label": "biographical information",
+                "score": "0.00766"
+            },
+            {
+                "label": "language and languages",
+                "score": "0.00755"
+            },
+            {
+                "label": "international relations",
+                "score": "0.00705"
+            },
+            {
+                "label": "elections",
+                "score": "0.00691"
+            },
+            {
+                "label": "credit",
+                "score": "0.00625"
+            },
+            {
+                "label": "editorials",
+                "score": "0.00598"
+            },
+            {
+                "label": "united states politics and government",
+                "score": "0.00553"
+            },
+            {
+                "label": "united states international relations",
+                "score": "0.00446"
+            },
+            {
+                "label": "no index terms from nytimes",
+                "score": "0.00443"
+            },
+            {
+                "label": "prisons and prisoners",
+                "score": "0.00434"
+            },
+            {
+                "label": "freedom and human rights",
+                "score": "0.00426"
+            },
+            {
+                "label": "culture",
+                "score": "0.00389"
+            },
+            {
+                "label": "law and legislation",
+                "score": "0.00347"
+            },
+            {
+                "label": "terms not available",
+                "score": "0.00341"
+            },
+            {
+                "label": "social conditions and trends",
+                "score": "0.00339"
+            },
+            {
+                "label": "mexican-americans",
+                "score": "0.00339"
+            }
+        ],
+        "descriptors3000": [
+            {
+                "label": "immigration and refugees",
+                "score": "0.95837"
+            },
+            {
+                "label": "immigration and emigration",
+                "score": "0.72813"
+            },
+            {
+                "label": "illegal aliens",
+                "score": "0.68587"
+            },
+            {
+                "label": "illegal immigrants",
+                "score": "0.14558"
+            },
+            {
+                "label": "labor",
+                "score": "0.10117"
+            },
+            {
+                "label": "asylum (political)",
+                "score": "0.05254"
+            },
+            {
+                "label": "refugees and expatriates",
+                "score": "0.05165"
+            },
+            {
+                "label": "deportation",
+                "score": "0.03050"
+            },
+            {
+                "label": "shows (exhibits)",
+                "score": "0.02179"
+            },
+            {
+                "label": "children and youth",
+                "score": "0.01866"
+            },
+            {
+                "label": "culture",
+                "score": "0.01472"
+            },
+            {
+                "label": "drug traffic",
+                "score": "0.01275"
+            },
+            {
+                "label": "travel and vacations",
+                "score": "0.01191"
+            },
+            {
+                "label": "entertainment and amusements",
+                "score": "0.01011"
+            },
+            {
+                "label": "smuggling",
+                "score": "0.00922"
+            },
+            {
+                "label": "terms not available",
+                "score": "0.00822"
+            },
+            {
+                "label": "reviews",
+                "score": "0.00796"
+            },
+            {
+                "label": "politics and government",
+                "score": "0.00704"
+            },
+            {
+                "label": "editorials",
+                "score": "0.00692"
+            },
+            {
+                "label": "reform and reorganization",
+                "score": "0.00629"
+            },
+            {
+                "label": "civil war and guerrilla warfare",
+                "score": "0.00621"
+            },
+            {
+                "label": "war and revolution",
+                "score": "0.00619"
+            },
+            {
+                "label": "international relations",
+                "score": "0.00598"
+            },
+            {
+                "label": "finances",
+                "score": "0.00589"
+            },
+            {
+                "label": "foreign labor",
+                "score": "0.00578"
+            },
+            {
+                "label": "blacks (in us)",
+                "score": "0.00567"
+            },
+            {
+                "label": "racial relations",
+                "score": "0.00508"
+            },
+            {
+                "label": "citizenship",
+                "score": "0.00479"
+            },
+            {
+                "label": "united states international relations",
+                "score": "0.00468"
+            },
+            {
+                "label": "families and family life",
+                "score": "0.00460"
+            }
+        ],
+        "descriptors600": [
+            {
+                "label": "immigration and refugees",
+                "score": "0.97011"
+            },
+            {
+                "label": "asylum (political)",
+                "score": "0.30150"
+            },
+            {
+                "label": "illegal aliens",
+                "score": "0.25587"
+            },
+            {
+                "label": "labor",
+                "score": "0.15668"
+            },
+            {
+                "label": "politics and government",
+                "score": "0.09764"
+            },
+            {
+                "label": "culture",
+                "score": "0.03849"
+            },
+            {
+                "label": "economic conditions and trends",
+                "score": "0.03323"
+            },
+            {
+                "label": "biographical information",
+                "score": "0.02698"
+            },
+            {
+                "label": "editorials",
+                "score": "0.02108"
+            },
+            {
+                "label": "wages and salaries",
+                "score": "0.02032"
+            },
+            {
+                "label": "medicine and health",
+                "score": "0.01959"
+            },
+            {
+                "label": "international relations",
+                "score": "0.01799"
+            },
+            {
+                "label": "terrorism",
+                "score": "0.01593"
+            },
+            {
+                "label": "deportation",
+                "score": "0.01510"
+            },
+            {
+                "label": "united states politics and government",
+                "score": "0.01496"
+            },
+            {
+                "label": "food",
+                "score": "0.01444"
+            },
+            {
+                "label": "crime and criminals",
+                "score": "0.01381"
+            },
+            {
+                "label": "children and youth",
+                "score": "0.01334"
+            },
+            {
+                "label": "freedom and human rights",
+                "score": "0.01332"
+            },
+            {
+                "label": "hispanic-americans",
+                "score": "0.01095"
+            },
+            {
+                "label": "finances",
+                "score": "0.01060"
+            },
+            {
+                "label": "united states international relations",
+                "score": "0.01045"
+            },
+            {
+                "label": "travel and vacations",
+                "score": "0.01026"
+            },
+            {
+                "label": "population",
+                "score": "0.00793"
+            },
+            {
+                "label": "prisons and prisoners",
+                "score": "0.00789"
+            },
+            {
+                "label": "no index terms from nytimes",
+                "score": "0.00730"
+            },
+            {
+                "label": "women",
+                "score": "0.00705"
+            },
+            {
+                "label": "news and news media",
+                "score": "0.00632"
+            },
+            {
+                "label": "prostitution",
+                "score": "0.00623"
+            },
+            {
+                "label": "books and literature",
+                "score": "0.00607"
+            }
+        ],
+        "descriptorsAndTaxonomies": [
+            {
+                "label": "top/news",
+                "score": "0.89623"
+            },
+            {
+                "label": "immigration and refugees",
+                "score": "0.86696"
+            },
+            {
+                "label": "top/news/world/americas",
+                "score": "0.57071"
+            },
+            {
+                "label": "illegal aliens",
+                "score": "0.44979"
+            },
+            {
+                "label": "top/features/travel/guides/destinations/north america",
+                "score": "0.26484"
+            },
+            {
+                "label": "top/features/travel/guides/destinations/north america/mexico",
+                "score": "0.20051"
+            },
+            {
+                "label": "travel and vacations",
+                "score": "0.15185"
+            },
+            {
+                "label": "top/news/u.s.",
+                "score": "0.14445"
+            },
+            {
+                "label": "top/news/world/countries and territories/mexico",
+                "score": "0.14084"
+            },
+            {
+                "label": "top/features/travel/guides/destinations/north america/united states",
+                "score": "0.13148"
+            },
+            {
+                "label": "asylum (political)",
+                "score": "0.12801"
+            },
+            {
+                "label": "top/news/world/countries and territories/united states",
+                "score": "0.10572"
+            },
+            {
+                "label": "labor",
+                "score": "0.09897"
+            },
+            {
+                "label": "politics and government",
+                "score": "0.08499"
+            },
+            {
+                "label": "top/classifieds/job market/job categories/hospitality, restaurant and travel",
+                "score": "0.08258"
+            },
+            {
+                "label": "top/news/world",
+                "score": "0.07037"
+            },
+            {
+                "label": "top/features/travel/guides/destinations/central and south america",
+                "score": "0.06832"
+            },
+            {
+                "label": "illegal immigrants",
+                "score": "0.05499"
+            },
+            {
+                "label": "economic conditions and trends",
+                "score": "0.05259"
+            },
+            {
+                "label": "top/features/week in review",
+                "score": "0.04582"
+            },
+            {
+                "label": "smuggling",
+                "score": "0.04191"
+            },
+            {
+                "label": "immigration and emigration",
+                "score": "0.04160"
+            },
+            {
+                "label": "citizenship",
+                "score": "0.04025"
+            },
+            {
+                "label": "top/features/travel/guides/destinations/north america/united states/california",
+                "score": "0.03986"
+            },
+            {
+                "label": "top/news/world/countries and territories/canada",
+                "score": "0.03968"
+            },
+            {
+                "label": "top/news/u.s./south",
+                "score": "0.03844"
+            },
+            {
+                "label": "culture",
+                "score": "0.03715"
+            },
+            {
+                "label": "top/features/travel/guides/destinations/north america/united states/florida/miami",
+                "score": "0.03691"
+            },
+            {
+                "label": "top/features/travel/guides/destinations/north america/canada",
+                "score": "0.03670"
+            },
+            {
+                "label": "top/news/world/asia pacific",
+                "score": "0.03294"
+            }
+        ],
+        "taxonomies": [
+            {
+                "label": "Top/News",
+                "score": "0.92506"
+            },
+            {
+                "label": "Top/News/World/Americas",
+                "score": "0.47667"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/North America",
+                "score": "0.35791"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/North America/Mexico",
+                "score": "0.26748"
+            },
+            {
+                "label": "Top/News/World/Countries and Territories/Mexico",
+                "score": "0.25625"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/North America/United States",
+                "score": "0.20668"
+            },
+            {
+                "label": "Top/News/World/Countries and Territories/United States",
+                "score": "0.18975"
+            },
+            {
+                "label": "Top/News/U.S.",
+                "score": "0.18873"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/Central and South America",
+                "score": "0.18151"
+            },
+            {
+                "label": "Top/News/Sports",
+                "score": "0.14036"
+            },
+            {
+                "label": "Top/News/World",
+                "score": "0.11421"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/North America/United States/California",
+                "score": "0.11217"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/Caribbean and Bermuda",
+                "score": "0.10369"
+            },
+            {
+                "label": "Top/News/World/Asia Pacific",
+                "score": "0.09734"
+            },
+            {
+                "label": "Top/News/U.S./South",
+                "score": "0.05947"
+            },
+            {
+                "label": "Top/News/Business",
+                "score": "0.05334"
+            },
+            {
+                "label": "Top/News/U.S./West",
+                "score": "0.04867"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/North America/Canada",
+                "score": "0.04668"
+            },
+            {
+                "label": "Top/News/U.S./U.S. States, Territories and Possessions/California",
+                "score": "0.04155"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/Asia",
+                "score": "0.03596"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/North America/United States/California/Los Angeles",
+                "score": "0.02902"
+            },
+            {
+                "label": "Top/News/World/Countries and Territories/Canada",
+                "score": "0.02514"
+            },
+            {
+                "label": "Top/Features/Magazine",
+                "score": "0.02218"
+            },
+            {
+                "label": "Top/Opinion",
+                "score": "0.02202"
+            },
+            {
+                "label": "Top/Opinion/Opinion",
+                "score": "0.02202"
+            },
+            {
+                "label": "Top/Opinion/Opinion/Op-Ed",
+                "score": "0.02201"
+            },
+            {
+                "label": "Top/Features/Week in Review",
+                "score": "0.02078"
+            },
+            {
+                "label": "Top/News/Front Page",
+                "score": "0.02015"
+            },
+            {
+                "label": "Top/Classifieds/Job Market/Job Categories/Government, Philanthropy and NGO",
+                "score": "0.01888"
+            },
+            {
+                "label": "Top/Features/Travel/Guides/Destinations/Caribbean and Bermuda/Cuba",
+                "score": "0.01610"
+            }
+        ]
+    },
+    "status": "OK",
+    "version": "1.1.0"
+}
