@@ -7,6 +7,8 @@ const block = '<span class="block"></span>'
 
 export function click(e) {
 
+    console.log(e)
+
     select('#focus').remove()
 
     const focus = select('body').append('div').attr('id', 'focus')
@@ -15,6 +17,7 @@ export function click(e) {
     // Heading
 
     focus.append('h1').html(e.name)
+    focus.append('h2').html('Type: ' + e.type)
     focus.append('h2').html(`<a href= https://en.wikipedia.org/wiki/Special:Search/${encodeURIComponent(e.name)} target="_blank">Search on Wikipedia</a>`)
     focus.append('h2').html('Frequency: ' + e.frequency)
     focus.append('h2').html('Trend: ' + Number(e.slope).toFixed(2))
