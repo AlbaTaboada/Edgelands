@@ -48,7 +48,7 @@ export default (entities) => {
                 splitInTwo(e.name),
                 {
                     fontName: 'Lato',
-                    fontSize: 2,
+                    fontSize: 1.5,
                     align: 'left',
                     tint: isSubject ? s.gray : '0x000000',
                 })

@@ -19,7 +19,7 @@ export default entities => {
             const bitmap = new BitmapText(
                 e.name, {
                 fontName: 'Lato',
-                fontSize: (e.frequency_norm + 1) * 10, // Normalization ([0:1] + x) + scale
+                fontSize: (e.frequency_norm + .5) * 20, // Normalization ([0:1] + x) + scale
                 align: 'center',
                 tint: s.gray,
             })

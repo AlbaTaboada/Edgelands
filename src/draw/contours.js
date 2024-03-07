@@ -3,8 +3,8 @@ import { contourDensity, extent } from 'd3'
 
 const width = .5
 const cellSize = 1
-const bandwidth = 25 // Detail
-const thresholds = 10
+const bandwidth = 30 // Extension
+const thresholds = 15
 
 export default entities => {
 
@@ -18,7 +18,8 @@ export default entities => {
         .x(e => e.x)
         .y(e => e.y)
         // .weight(e => e['frequency'])
-        .weight(e => Math.abs(e['slope']))
+        // .weight(e => Math.abs(e['slope']))
+        .weight(e => Math.log(Math.abs(e['slope'])) + 3) // 2 is the normalization of the values
         .size([window.innerWidth, window.innerHeight])
         .cellSize(cellSize)
         .bandwidth(bandwidth)
