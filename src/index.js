@@ -99,7 +99,8 @@ Promise.all([
         resolution: 2,
         autoDensity: true,
         autoResize: true,
-        resizeTo: window
+        resizeTo: window,
+        preserveDrawingBuffer: true,
     })
 
     document.body.prepend(s.app.view)
