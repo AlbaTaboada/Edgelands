@@ -97,6 +97,7 @@ Promise.all([
     s.app = new Application({
         antialias: true,
         resolution: 2,
+        // resolution: 9, // For Canvas export
         autoDensity: true,
         autoResize: true,
         resizeTo: window,
@@ -166,3 +167,19 @@ Promise.all([
     }, { passive: false }) // Prevent wheel interference
 
 })
+
+// Canvas Export
+
+// a = document.createElement("a");
+// canvas = document.getElementsByTagName("canvas")[0]
+
+// function saveCanvas() {
+// //   console.log(canvas)
+//   a.href = canvas.toDataURL();
+//   a.download = "image.png";
+//   a.click();
+//   a.remove();
+  
+// }
+
+// setTimeout(saveCanvas, 1000)
