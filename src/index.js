@@ -14,7 +14,6 @@ import { Viewport } from 'pixi-viewport'
 import background from './draw/background'
 import clusters from './draw/clusters.js'
 import contours from './draw/contours.js'
-import crosses from './draw/crosses.js'
 import elements from './draw/elements.js'
 import fronts from './draw/fronts.js'
 import keywords from './draw/keywords.js'
@@ -96,8 +95,8 @@ Promise.all([
 
     s.app = new Application({
         antialias: true,
-        resolution: 2,
-        // resolution: 9, // For Canvas export
+        resolution: 2, // Interface
+        // resolution: 8, // Canvas export
         autoDensity: true,
         autoResize: true,
         resizeTo: window,
@@ -138,7 +137,6 @@ Promise.all([
         e.viewport.children.find(child => child.name == 'clusters').alpha = zoomOut(scale)
         e.viewport.children.find(child => child.name == 'contours').alpha = zoomOut(scale)
         e.viewport.children.find(child => child.name == 'keywords').alpha = zoomOut(scale)
-        e.viewport.children.find(child => child.name == 'crosses').alpha = zoomOut(scale)
 
         e.viewport.children.find(child => child.name == 'elements').alpha = zoomIn(scale)
     })
@@ -151,7 +149,6 @@ Promise.all([
     keywords(entities)
     clusters(entities)
     elements(entities)
-    crosses(entities)
     fronts(entities)
     // search(data)
 
@@ -169,17 +166,21 @@ Promise.all([
 })
 
 // Canvas Export
+/*
 
-// a = document.createElement("a");
-// canvas = document.getElementsByTagName("canvas")[0]
 
-// function saveCanvas() {
-// //   console.log(canvas)
-//   a.href = canvas.toDataURL();
-//   a.download = "image.png";
-//   a.click();
-//   a.remove();
+a = document.createElement("a");
+canvas = document.getElementsByTagName("canvas")[0]
+
+function saveCanvas() {
+  a.href = canvas.toDataURL();
+  a.download = "image.png";
+  a.click();
+  a.remove();
   
-// }
+}
 
-// setTimeout(saveCanvas, 1000)
+setTimeout(saveCanvas, 100)
+
+
+*/

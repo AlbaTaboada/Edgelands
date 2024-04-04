@@ -19,7 +19,8 @@ export default (entities) => {
     s.viewport.addChild(stage)
 
     entities
-        // .filter(e => e['type'] !== 'subject') // Keep nodes
+        // .filter(e => e['type'] !== 'tag') // Flter by type
+        // .filter(e => e['slope'] <= 0) // filter by color
         .forEach(e => {
 
             const isSubject = e.type == 'tag'

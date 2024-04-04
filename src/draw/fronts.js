@@ -5,6 +5,7 @@ export default entities => {
 
 
     const stage = new Graphics()
+    stage.alpha = 1
     stage.interactiveChildren = false
     stage.name = 'fronts'
     s.viewport.addChild(stage)

@@ -31,7 +31,7 @@ export default entities => {
             // let colorRGB = average(colors, 'rgb')
             // let colorHex = formatHex(colorRGB)
 
-            // stage.lineStyle(.2, 0xFFFFFF)
+            // // stage.lineStyle(0, 0xFFFFFF)
             // stage.beginFill('0x' + colorHex.substring(1), 1)
             // stage.alpha = .5
             // polygon.forEach((p, i) => (i == 0) ? stage.moveTo(p[0], p[1]) : stage.lineTo(p[0], p[1]))
