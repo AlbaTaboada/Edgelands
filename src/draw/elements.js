@@ -23,36 +23,34 @@ export default (entities) => {
         // .filter(e => e['slope'] <= 0) // filter by color
         .forEach(e => {
 
-            const color = '0x' + e.color.substring(1)
-
             // Cross
 
             const length = 3
 
             const line_1 = new Graphics()
-            line_1.lineStyle(.5, color)
+            line_1.lineStyle(.5, e.color)
             line_1.moveTo(e.x, e.y - length)
             line_1.lineTo(e.x, e.y + length)
             stage.addChild(line_1)
 
             const line_2 = new Graphics()
-            line_2.lineStyle(.5, color)
+            line_2.lineStyle(.5, e.color)
             line_2.moveTo(e.x - length, e.y)
             line_2.lineTo(e.x + length, e.y)
             stage.addChild(line_2)
 
             // Label
 
-            // const bitmap = new BitmapText(
-            //     splitInTwo(e.name),
-            //     {
-            //         fontName: 'Lato',
-            //         fontSize: 1.5,
-            //         align: 'left',
-            //         tint: isSubject ? s.gray : '0x000000',
-            //     })
-            //     bitmap.position.set(e.x + 1.2, e.y + .6)
-            // stage.addChild(bitmap)
+            const bitmap = new BitmapText(
+                e.year,
+                {
+                    fontName: 'Lato',
+                    fontSize: 1.5,
+                    align: 'left',
+                    tint: e.color,
+                })
+                bitmap.position.set(e.x + 1.2, e.y + .6)
+            stage.addChild(bitmap)
 
 
             // Interaction

@@ -59,6 +59,8 @@ Promise.all([
     entities.map(e => {
         e.x = marginLeft + parseInt(scale_X(e.x))
         e.y = marginTop + parseInt(scale_Y(e.y))
+        e.color = '0x' + e.color.substring(1)
+        
         // console.log(e)
         // e.temperature = parseFloat(e.temperature)
         // e.frequency_norm = parseFloat(e.frequency_norm)
