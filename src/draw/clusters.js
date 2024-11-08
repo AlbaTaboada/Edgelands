@@ -21,7 +21,7 @@ export default entities => {
             if (cluster[0].cluster === '-1')
                 return // Romove no clustered entities
 
-            const slope = mean(cluster.map(e => e.slope))
+            const temperature = mean(cluster.map(e => e.temperature))
 
             const coordinates = cluster.map(e => [e.x, e.y])
             const polygon = polygonHull(coordinates)
@@ -31,19 +31,19 @@ export default entities => {
             // let colorRGB = average(colors, 'rgb')
             // let colorHex = formatHex(colorRGB)
 
-            // // stage.lineStyle(0, 0xFFFFFF)
+            // stage.lineStyle(0, 0xFFFFFF)
             // stage.beginFill('0x' + colorHex.substring(1), 1)
             // stage.alpha = .5
             // polygon.forEach((p, i) => (i == 0) ? stage.moveTo(p[0], p[1]) : stage.lineTo(p[0], p[1]))
             // stage.closePath()
 
             const bitmap = new BitmapText(
-                (s.temperature > 0) ? 'H' : 'L',
+                (temperature > 0) ? 'H' : 'L',
                 {
                     fontName: 'Lato',
                     fontSize: 20,
                     align: 'center',
-                    tint: s.color,
+                    tint: (temperature > 0 ? 0xFF0000 : 0x0000FF),
                 })
 
             bitmap.position.set(center[0] - bitmap.textWidth / 2, center[1] - bitmap.textHeight / 2)

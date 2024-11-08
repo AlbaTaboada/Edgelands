@@ -23,13 +23,11 @@ export default (entities) => {
         // .filter(e => e['slope'] <= 0) // filter by color
         .forEach(e => {
 
-            const isSubject = e.type == 'tag'
-
-            const color = isSubject ? s.gray : e.slope > 0 ? s.red : s.blue
+            const color = '0x' + e.color.substring(1)
 
             // Cross
 
-            const length = isSubject ? 1 : 2
+            const length = 3
 
             const line_1 = new Graphics()
             line_1.lineStyle(.5, color)
