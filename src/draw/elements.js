@@ -45,25 +45,25 @@ export default (entities) => {
 
             // Label
 
-            const bitmap = new BitmapText(
-                splitInTwo(e.name),
-                {
-                    fontName: 'Lato',
-                    fontSize: 1.5,
-                    align: 'left',
-                    tint: isSubject ? s.gray : '0x000000',
-                })
-                bitmap.position.set(e.x + 1.2, e.y + .6)
-            stage.addChild(bitmap)
+            // const bitmap = new BitmapText(
+            //     splitInTwo(e.name),
+            //     {
+            //         fontName: 'Lato',
+            //         fontSize: 1.5,
+            //         align: 'left',
+            //         tint: isSubject ? s.gray : '0x000000',
+            //     })
+            //     bitmap.position.set(e.x + 1.2, e.y + .6)
+            // stage.addChild(bitmap)
 
 
             // Interaction
 
-            bitmap.hitArea = new Rectangle(0, 0, bitmap.textWidth, bitmap.textHeight)
-            bitmap.interactive = true
-            bitmap.buttonMode = true
+            // bitmap.hitArea = new Rectangle(0, 0, bitmap.textWidth, bitmap.textHeight)
+            // bitmap.interactive = true
+            // bitmap.buttonMode = true
 
-            bitmap.click = event => { click(e) } // On click
+            // bitmap.click = event => { click(e) } // On click
 
 
             // Baseline

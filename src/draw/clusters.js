@@ -38,12 +38,12 @@ export default entities => {
             // stage.closePath()
 
             const bitmap = new BitmapText(
-                (slope > 0) ? 'H' : 'L',
+                (s.temperature > 0) ? 'H' : 'L',
                 {
                     fontName: 'Lato',
                     fontSize: 20,
                     align: 'center',
-                    tint: (slope > 0) ? s.red : s.blue,
+                    tint: s.color,
                 })
 
             bitmap.position.set(center[0] - bitmap.textWidth / 2, center[1] - bitmap.textHeight / 2)

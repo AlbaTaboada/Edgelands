@@ -57,13 +57,14 @@ Promise.all([
     // Parsing
 
     entities.map(e => {
-        e.frequency = parseInt(e.frequency)
-        e.frequency_norm = parseFloat(e.frequency_norm)
-        e.slope = parseFloat(e.slope)
+        // console.log(e)
+        e.temperature = parseFloat(e.temperature)
+        // e.frequency_norm = parseFloat(e.frequency_norm)
+        // e.slope = parseFloat(e.slope)
         e.x = marginLeft + parseInt(scale_X(e.x))
         e.y = marginTop + parseInt(scale_Y(e.y))
-        e.urls = e.urls.substring(2).substring(0, e.urls.length - 2).split("', '")
-        e.years_JSON = JSON.parse(e.years_JSON)
+        // e.urls = e.urls.substring(2).substring(0, e.urls.length - 2).split("', '")
+        // e.years_JSON = JSON.parse(e.years_JSON)
         return e
     })
 
@@ -85,7 +86,7 @@ Promise.all([
     // Random element
     const randomElement = entities[Math.floor(Math.random() * entities.length)]
     console.log(randomElement) // Test
-    click(randomElement)
+    // click(randomElement)
     
     
     
