@@ -37,11 +37,50 @@ export default entities => {
             const colorHex = formatHex(colorRGB)
             const color = '0x' + colorHex.substring(1)
 
-            stage.lineStyle(.4, color)
-            stage.beginFill(color, 0)
-            // stage.alpha = .5
-            polygon.forEach((p, i) => (i == 0) ? stage.moveTo(p[0], p[1]) : stage.lineTo(p[0], p[1]))
-            stage.closePath()
+            // Function to expand the polygon outward
+            const expandPolygon = (polygon, factor = 10) => {
+                const centroid = polygonCentroid(polygon); // Get the centroid of the polygon
+                return polygon.map(([x, y]) => {
+                    const dx = x - centroid[0];
+                    const dy = y - centroid[1];
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+                    const scale = (distance + factor) / distance; // Expand by the factor
+                    return [centroid[0] + dx * scale, centroid[1] + dy * scale];
+                });
+            };
+
+            // Expanded polygon
+            const expandedPolygon = expandPolygon(polygon, 10); // Adjust the factor to control expansion
+
+            // Contour with Rounded Corners, including expansion
+            stage.lineStyle(0.4, color); // Set line style
+            stage.beginFill(color, 0.2); // Set fill color with transparency
+
+            for (let i = 0; i < expandedPolygon.length; i++) {
+                const currentPoint = expandedPolygon[i];
+                const nextPoint = expandedPolygon[(i + 1) % expandedPolygon.length]; // Wrap around to the start
+                const prevPoint = expandedPolygon[(i - 1 + expandedPolygon.length) % expandedPolygon.length]; // Previous point with wrap-around
+                const controlPoint = [
+                    (prevPoint[0] + currentPoint[0]) / 2,
+                    (prevPoint[1] + currentPoint[1]) / 2,
+                ];
+
+                if (i === 0) {
+                    stage.moveTo(controlPoint[0], controlPoint[1]); // Start at the midpoint of the last segment
+                }
+
+                const midPoint = [
+                    (currentPoint[0] + nextPoint[0]) / 2,
+                    (currentPoint[1] + nextPoint[1]) / 2,
+                ];
+                stage.quadraticCurveTo(currentPoint[0], currentPoint[1], midPoint[0], midPoint[1]); // Smooth curve
+            }
+
+            stage.closePath(); // Close the path
+
+
+
+            // Text
 
             const bitmap = new BitmapText(
                 // (temperature > 0) ? 'H' : 'L',
