@@ -16,7 +16,6 @@ export function click(e) {
 
     // Heading
 
-    focus.append('h2').html('MIT Technology Review')
     focus.append('h2').html('Release Date: ' + e.publish_date)
     focus.append('p').html(line)
     focus.append('h1').html(e.title)

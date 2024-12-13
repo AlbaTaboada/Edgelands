@@ -13,13 +13,11 @@ import { Viewport } from 'pixi-viewport'
 
 import background from './interface/background.js'
 import clusters from './interface/clusters.js'
+import click from './interface/click.js'
 import contours from './interface/contours.js'
 import elements from './interface/elements.js'
 import fronts from './interface/fronts.js'
 import keywords from './interface/keywords.js'
-
-import click from './interface/click.js'
-
 import search from './interface/search.js'
 
 import fontXML from './assets/Lato.fnt'
@@ -28,18 +26,16 @@ import fontPNG from './assets/Lato.png'
 import backgroundImage from './assets/background.png'
 
 import entities from './data/entities.csv'
-import data_clusters from './data/clusters.csv'
 
 // Load
 
 Promise.all([
     csv(entities),
-    csv(data_clusters),
     xml(fontXML),
     image(fontPNG),
     image(backgroundImage),
 
-]).then(([entities, data_clusters, fontXML, fontPNG, backgroundImage]) => {
+]).then(([entities, fontXML, fontPNG, backgroundImage]) => {
 
 
     // Set dimensions
