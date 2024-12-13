@@ -11,16 +11,16 @@ import { Viewport } from 'pixi-viewport'
 
 // Assets
 
-import background from './draw/background'
-import clusters from './draw/clusters.js'
-import contours from './draw/contours.js'
-import elements from './draw/elements.js'
-import fronts from './draw/fronts.js'
-import keywords from './draw/keywords.js'
+import background from './interface/background.js'
+import clusters from './interface/clusters.js'
+import contours from './interface/contours.js'
+import elements from './interface/elements.js'
+import fronts from './interface/fronts.js'
+import keywords from './interface/keywords.js'
 
-import { click } from './interface/click'
+import click from './interface/click.js'
 
-import search from './interface/search'
+import search from './interface/search.js'
 
 import fontXML from './assets/Lato.fnt'
 import fontPNG from './assets/Lato.png'
@@ -62,7 +62,7 @@ Promise.all([
         e.x = marginLeft + parseInt(scale_X(e.x))
         e.y = marginTop + parseInt(scale_Y(e.y))
         e.color = '0x' + e.color.substring(1)
-        
+
         // console.log(e)
         // e.temperature = parseFloat(e.temperature)
         // e.frequency_norm = parseFloat(e.frequency_norm)
@@ -83,17 +83,17 @@ Promise.all([
         'gray': 0x999999,
         'contours': 0xCCCCCC,
     }
-    
-    BitmapFont.install(fontXML, Texture.from(fontPNG)) // Font loader
-    
 
-    // Random element
-    const randomElement = entities[Math.floor(Math.random() * entities.length)]
-    console.log(randomElement) // Test
+    BitmapFont.install(fontXML, Texture.from(fontPNG)) // Font loader
+
+
+    // Test random element
+    // const randomElement = entities[Math.floor(Math.random() * entities.length)]
+    // console.log(randomElement)
     // click(randomElement)
-    
-    
-    
+
+
+
 
 
     // Set app
