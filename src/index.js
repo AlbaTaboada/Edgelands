@@ -28,16 +28,18 @@ import fontPNG from './assets/Lato.png'
 import backgroundImage from './assets/background.png'
 
 import entities from './data/entities.csv'
+import data_clusters from './data/clusters.csv'
 
 // Load
 
 Promise.all([
     csv(entities),
+    csv(data_clusters),
     xml(fontXML),
     image(fontPNG),
     image(backgroundImage),
 
-]).then(([entities, fontXML, fontPNG, backgroundImage]) => {
+]).then(([entities, data_clusters, fontXML, fontPNG, backgroundImage]) => {
 
 
     // Set dimensions
