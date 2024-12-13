@@ -73,8 +73,8 @@ export default entities => {
                 const a = [+ heigth * width_1 - width * shift_1, -width * width_1 - heigth * shift_1]
                 const b = [- heigth * width_1 - width * shift_1, width * width_1 - heigth * shift_1]
 
-                const width_2 = .8
-                const shift_2 = .2
+                const width_2 = 1
+                const shift_2 = .3
 
                 const c = [+ heigth * width_2 + width * shift_2, -width * width_2 + heigth * shift_2]
                 const d = [- heigth * width_2 + width * shift_2, width * width_2 + heigth * shift_2]

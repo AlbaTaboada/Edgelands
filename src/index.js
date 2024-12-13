@@ -76,7 +76,7 @@ Promise.all([
         'bitmaps': [], // Collector of bitmaps for overlapping
         'blue': 0x385DA6,
         'red': 0xA6242F,
-        'gray': 0x999999,
+        'gray': 0x666666,
         'contours': 0xCCCCCC,
     }
 
