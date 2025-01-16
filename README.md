@@ -3,7 +3,7 @@
 
 This repository contains one instance of the **Weather Map**, an innovative visualization tool designed to map and analyze public discourse. Developed as part of a research study focusing on the MIT Technology Review’s publications from 2021 to 2024, this instance of the tool leverages **network visualization**, **natural language processing**, and **topic modeling** to explore trends, patterns, and controversies surrounding AI, particularly in the era of ChatGPT.
 
-The Weather Map of MIT Technology Review is accessible at albataboada.github.io/Weather_map/
+The Weather Map of MIT Technology Review is accessible at (https://albataboada.github.io/Weather_map/)[https://albataboada.github.io/Weather_map/]
 
 ## Features
 
