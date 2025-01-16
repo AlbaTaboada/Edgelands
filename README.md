@@ -1,10 +1,6 @@
 
 # Weather Map: Mapping AI Public Debates
 
-**Repository URL:** [Weather Map on GitHub](https://github.com/AlbaTaboada/Weather_map)
-
-## Overview
-
 This repository contains the **Weather Map**, an innovative visualization tool designed to map and analyze public discourse on artificial intelligence (AI). Developed as part of a research study focusing on the MIT Technology Review’s publications from 2021 to 2024, the tool leverages **network visualization**, **natural language processing**, and **topic modeling** to explore trends, patterns, and controversies surrounding AI, particularly in the era of ChatGPT.
 
 The project examines how specialized media shape public narratives about AI, bridging the gap between technical innovations and broader sociopolitical discussions.
